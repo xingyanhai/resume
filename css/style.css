@@ -1,0 +1,229 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+ul{
+	list-style: none;
+}
+header{
+	position: fixed;
+	width:100%;
+	height: 45px;
+	background: #000;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	color: #fff;
+	font-size: 20px;
+	z-index: 10;
+}
+header *{
+	text-align: center;
+}
+header span{
+	flex-grow:1;
+	font-weight: bold;
+}
+header div{
+	flex-grow:6;
+}
+footer{
+	left:0;
+	bottom: 0;
+	position: fixed;
+	width:100%;
+	height: 50px;
+	background: url(../iconfont/line.svg) repeat-x left top;
+	display: flex;
+	justify-content:space-around;
+	z-index: 10;
+}
+footer div{
+	flex-grow:1;
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:space-around;
+}
+#main{
+	position: absolute;
+	top:45px;
+	left: 0;
+	bottom:50px;
+	width:100%;
+	background: #fff;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+	
+}
+.swiper-wrapper{
+	height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+#main .swiper-slide:nth-of-type(1){
+	background: url(../img/1.jpg) no-repeat center;
+}
+#main .swiper-slide:nth-of-type(2){
+	background: url(../img/2.jpg) no-repeat center;
+}
+#main .swiper-slide:nth-of-type(3){
+	background: url(../img/3.jpg) no-repeat center;
+}
+#main .swiper-slide:nth-of-type(4){
+	background: url(../img/4.jpg) no-repeat center;
+}
+.f_active{
+	color: green;
+}
+
+
+section{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top:0;
+	bottom: 0;
+	z-index: 100;
+}
+section .swiper-slide{
+	background: #ddd;
+}
+section .section-end{
+	background: transparent;
+}
+
+#friends{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	bottom: 0;
+	z-index: 200;
+	overflow:auto;
+	background: #fff;
+	transition:1s;
+	display: none;
+}
+.moveright{
+	animation:moveR 0.5s;
+}
+@keyframes moveR{
+	from{transform: translateX(0);}
+	to{transform: translateX(100%);}
+}
+
+#wrapper {
+	position:absolute;
+	z-index:200;
+	top:45px;
+	bottom:0; 
+	left:-9999px;
+	width:100%;
+	background:#fff;
+	overflow:auto;
+}
+
+
+#pullDown, #pullUp {
+	background:#fff;
+	height:40px;
+	line-height:40px;
+	padding:5px 10px;
+	border-bottom:1px solid #ccc;
+	font-weight:bold;
+	font-size:14px;
+	color:#888;
+}
+
+#pullDown .pullDownIcon, #pullUp .pullUpIcon  {
+	display:block; float:left;
+	width:40px; height:40px;
+	background:url(../img/pull-icon@2x.png) 0 0 no-repeat;
+	-webkit-background-size:40px 80px; background-size:40px 80px;
+	-webkit-transition-property:-webkit-transform;
+	-webkit-transition-duration:250ms;	
+}
+#pullDown .pullDownIcon {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+#pullUp .pullUpIcon  {
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullDown.flip .pullDownIcon {
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#pullUp.flip .pullUpIcon {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+
+#pullDown.loading .pullDownIcon, #pullUp.loading .pullUpIcon {
+	background-position:0 100%;
+	-webkit-transform:rotate(0deg) translateZ(0);
+	-webkit-transition-duration:0ms;
+
+	-webkit-animation-name:loading;
+	-webkit-animation-duration:2s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:linear;
+}
+
+@-webkit-keyframes loading {
+	from { -webkit-transform:rotate(0deg) translateZ(0); }
+	to { -webkit-transform:rotate(360deg) translateZ(0); }
+}
+.friends_tit{
+	height: 45px;
+	background: #333;
+	display: flex;
+	color: #fff;
+	font-size: 20px;
+	align-items:center;
+	justify-content:space-between;
+}
+.friends_tit b{
+	flex:1;
+	text-align: center;
+}
+.friends_tit span{
+	flex:8;
+	text-align: center;
+}
+.friends_tit i{
+	flex:1;
+}
+
+#main .swiper-slide:nth-last-of-type(1){
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.pyq{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	background: rgba(225,225,225,0.6);
+	color: green;
+	line-height: 50px;
+
+}
