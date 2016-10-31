@@ -1,0 +1,30 @@
+<ion-view view-title="Project">
+  <ion-content>
+   
+    
+<div class="list ">
+
+  
+
+ 
+    
+    <div class="card" ng-repeat="project in projects">
+      <div style="background: #bbb" class="item item-divider">{{project.name}}</div>
+
+      <div ng-repeat="p in project.des">
+
+        <div class="item item-divider">{{p.name}}</div>
+        <div class="item item-text-wrap" compile="p.description"></div> 
+          
+      
+      </div>
+
+    </div>
+
+</div>
+
+
+
+
+  </ion-content>
+</ion-view>

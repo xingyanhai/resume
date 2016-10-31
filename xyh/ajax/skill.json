@@ -1,0 +1,77 @@
+﻿[
+	{
+		"id":1,
+		"src":"img/css3.png",
+		"category":"布局",
+		"name":"Fixed、Fulid、Flex、Responsive",
+		"time":"3年",
+		"level":"精通"
+	},
+	{
+		"id":2,
+		"src":"img/js.png",
+		"category":"编程",
+		"name":"Javascript原生、Jquery及Zepto插件、AngularJs等",
+		"time":"3年",
+		"level":"精通"
+	},
+	{
+		"id":3,
+		"src":"img/angular.png",
+		"category":"框架",
+		"name":"Jquery、Zepto、AngularJs、Recat、Avalon等<br>灵活运用众多的框架内容，包括纯界面框架、交互框架及软件集成应用框架",
+		"time":"2年",
+		"level":"熟悉"
+
+	},
+	{
+		"id":4,
+		"src":"img/sw.png",
+		"category":"类库",
+		"name":"Swiper、Iscroll5等<br>熟练操作各种类库及框架插件",
+		"time":"2年",
+		"level":"熟悉"
+	},
+	{
+		"id":5,
+		"src":"img/weixinjs.png",
+		"category":"APP",
+		"name":"webapp/webChat Jssdk/phonegap<br>轻松实现轻应用开发、微信集成以及独立移动软件的混合式开发",
+		"time":"2年",
+		"level":"熟悉"
+	},
+	{
+		"id":6,
+		"src":"img/jquery.png",
+		"category":"插件",
+		"name":"Jquery menu plugin、Jquery nav plugin、zepto emoji-expression-plugin、bootstrap、echarts等",
+		"time":"2年",
+		"level":"熟悉"
+	},
+	{	
+		"id":7,
+		"src":"img/h5.png",
+		"category":"规范",
+		"name":"HTML4、HTML5、ES5、ES6、CommonJS、CMD、AMD等",
+		"time":"1年",
+		"level":"了解",
+		"lastText": "了解互联网的一些常用规范的知识内容"
+	},
+	{
+		"id":8,
+		"src":"img/gulp.png",
+		"category":"工具",
+		"name":"Fekit/gulp/Hbuilder/Atom/Sublime等<br>对于前端自动化构建工作能够在不同的项目里进行恰当的使用与整合",
+		"time":"3年",
+		"level":"精通"
+	},
+	{
+		"id":9,
+		"src":"img/h5+.jpg",
+		"category":"行业知识",
+		"name":"了解互联网的发展及趋势，移动应用成为未来的方向",
+		"time":"3年",
+		"level":"精通"
+	}
+	
+]

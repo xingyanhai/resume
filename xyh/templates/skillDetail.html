@@ -1,0 +1,30 @@
+
+
+
+<ion-view view-title="Detail">
+  <ion-content class="padding">
+
+
+<div class="list card" ng-repeat="s in skills" ng-if="s.id==sDetailId">
+
+  <div class="item item-avatar">
+    <img src="{{s.src}}">
+    <h2>{{s.category}}</h2>
+    <p>{{s.level}}</p>
+  </div>
+
+  <div class="item item-body">
+    <img class="full-image" src="{{s.src}}">
+    <p>
+      {{s.name}}
+    </p>
+    <p>
+      <a href="#" class="subdued"></a>
+    </p>
+  </div>
+
+</div>
+
+
+  </ion-content>
+</ion-view>

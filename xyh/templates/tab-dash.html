@@ -1,0 +1,39 @@
+<ion-view view-title="Skill">
+  <ion-content class="">
+    
+
+<ion-list
+          show-delete="shouldShowDelete"
+          show-reorder="shouldShowReorder"
+          can-swipe="listCanSwipe">
+  <ion-item  ng-repeat="skill in skills" 
+            class="item-thumbnail-left" href="#/tab/skillDetail{{skill.id}}">
+
+    <img class="borderRadius5" ng-src="{{skill.src}}">
+    <h2>{{skill.category}}</h2>
+    <p>{{skill.name}}</p>
+     <!-- <ion-option-button class="button-positive"
+                       ng-click="share(item)">
+      分享
+         </ion-option-button>  -->
+    <ion-option-button class="button-info"
+                       ng-click="edit(item)">
+      编辑
+    </ion-option-button>
+    <ion-delete-button class="ion-minus-circled"
+                       ng-click="items.splice($index, 1)">
+    </ion-delete-button>
+    <ion-reorder-button class="ion-navicon"
+                        on-reorder="reorderItem(item, $fromIndex, $toIndex)">
+    </ion-reorder-button>
+
+  </ion-item>
+</ion-list>
+<ion-infinite-scroll
+    on-infinite="loadMore()"
+    distance="1%">
+  </ion-infinite-scroll>
+
+
+  </ion-content>
+</ion-view>

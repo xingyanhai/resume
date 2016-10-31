@@ -1,0 +1,44 @@
+[{
+	"name":"pc端",
+	"des":[
+				{
+					"name":"项目名称",
+					"description":"风尚购物"
+				},{
+					"name":"项目截图",
+					"description":"<img class='full-image' src='img/fs.png'>"
+				},{
+					"name":"项目介绍",
+					"description":"风尚购物是一个b2b网上购物网站"		
+				},{
+					"name":"项目周期",
+					"description":"2月"		
+				},{
+					"name":"主要技术点",
+					"description":"float布局，jQuery类库，ajax技术，tabs切换，sublime编辑工具，Git版本管理工具，gulp前端自动化构建工具"		
+				}
+
+			]
+},{
+	"name":"移动端",
+	"des":[
+				{
+					"name":"项目名称",
+					"description":"91lebuy"
+				},{
+					"name":"项目截图",
+					"description":"<img class='full-image' src='img/fs.png'>"		
+				},{
+					"name":"项目介绍",
+					"description":"是一个b2b网上购物网站"		
+				},{
+					"name":"项目周期",
+					"description":"3月"		
+				},{
+					"name":"主要技术点",
+					"description":"flex布局，zopte类库，swiper插件，基于iscroll实现上啦加载，ajax技术，tabs切换，sublime编辑工具，Git版本管理工具，gulp前端自动化构建工具"		
+				}
+			]
+
+}]
+

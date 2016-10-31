@@ -1,0 +1,102 @@
+<ion-view view-title="About me">
+  <ion-content>
+
+
+
+
+
+    <div class="list">
+	    <div class="item item-divider"> 兴趣爱好:{{like}}</div>
+		<ion-slide-box
+		 on-slide-changed="slideHasChanged($index)" 
+		 does-continue="true" 
+		 auto-play="autoplay" 
+		 slide-interval="1000">
+		  <ion-slide>
+		    <div class="me-box blue"><img class="full-image" src="img/s1.jpg"></div>
+		  </ion-slide>
+		  <ion-slide>
+		    <div class="me-box yellow"><img class="full-image" src="img/s2.jpg"></div>
+		  </ion-slide>
+		  <ion-slide>
+		    <div class="me-box pink"><img class="full-image" src="img/s3.jpg"></div>
+		  </ion-slide>
+		  <ion-slide>
+		    <div class="me-box pink"><img class="full-image" src="img/s4.jpg"></div>
+		  </ion-slide>
+		</ion-slide-box>
+    </div>
+   
+
+   	  	<div class="item item-divider">
+	    个人信息
+	  </div>
+
+	  <a class="item" href="javascript:;">
+	    	姓名
+	    <span class="item-note c333">
+	      邢延海
+	    </span>
+	  </a>
+
+	  <a class="item" href="javascript:;">
+	    	毕业院校
+	    <span class="item-note c333">
+	      洛阳理工学院
+	    </span>
+	  </a>
+
+	  <a class="item" href="javascript:;">
+	    	出生年月
+	    <span class="item-note c333">
+	      1993.11
+	    </span>
+	  </a>
+
+      <div class="item item-divider">
+	    联系方式
+	  </div>
+
+	  <a class="item item-button-right" href="javascript:;">
+	   	<i class="icon ion-social-whatsapp"></i>
+	    	电话
+	    <span class="item-note c333">
+	      15737977973
+	    </span>
+
+	    <button class="button button-positive" ng-click="callFriend($event, 15737977973)">
+	      <i class="icon ion-ios-telephone"></i>
+	    </button>
+	  </a>
+
+	  <a class="item" href="javascript:;">
+	   	<i class="icon ion-mic-a"></i>
+	    	QQ
+	    <span class="item-note c333">
+	      1101099728
+	    </span>
+	    
+	  </a>
+
+	  <a class="item" href="javascript:;">
+	   	<i class="icon ion-email"></i>
+	    	邮箱
+	    <span class="item-note c333">
+	      1101099728@qq.com
+	    </span>
+	  </a>
+		
+	
+	
+
+	  
+
+
+	
+
+
+  </ion-content>
+</ion-view>
+
+
+
